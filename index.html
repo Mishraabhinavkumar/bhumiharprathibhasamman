@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bhumihar prathibha samman </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" />
+
+
+    <style>
+        /* Additional CSS for mobile responsiveness */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            font-family: Arial, sans-serif;
+        }
+        
+        .about-content, .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .about-box, .contact-info, .subscribe {
+            flex: 1 1 300px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .contact-info p, .contact-info a {
+            word-wrap: break-word; /* Prevent long texts from overflowing */
+        }
+
+        #map-container {
+            width: 100%;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEFRR26P4Q">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BEFRR26P4Q');
+</script>
+</head>
+<body>
+    <!-- Front Page Section -->
+    <header class="front-page">
+        <div class="overlay"></div>
+        <h1>Bhumihar Prathibha Samman</h1>
+        <p>"description"</p>
+        <a href="#about-us" class="learn-more">Learn More</a>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-box">
+                <h3>Our Vision</h3>
+                <p></p>
+            </div>
+            <div class="about-box">
+                <h3>Our Team</h3>
+                <p></p>
+            </div>
+            <div class="about-box">
+                <h3>Our Approach</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="client-testimonials">
+        <h2>See What Our Clients Say</h2>
+        <div class="testimonials">
+            <p>Reviews coming soon!</p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p>Better yet, see us in person!</p>
+                <p>location</p>
+                <a href="https://wa.me/9868060563" class="contact-link">Contact us</a>
+                <p>Email: pintupkm@rediffmail.com</p>
+                <a href="mailto:pintupkm@rediffmail.coms" class="contact-link">Drop us a line!</a>
+            </div>
+            <div id="map-container" style="width: 100%; height: auto;">
+                <!-- Placeholder content or a loading spinner can go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="subscribe">
+            <h2>Subscribe</h2>
+            <form action="subscribe.php" method="post">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/creations_4all/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61560357173133" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; 2025 Bhumiharprathibhasamman - All Rights Reserved.</p>
+    </footer>
+
+
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelector('.learn-more').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
